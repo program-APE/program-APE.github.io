@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="http://program-ape.space">
   <title>OC之封装 继承 多态 | Program-Ape</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="OC语言之封装，继承，多态封装1.面向对象三大特性 封装性  继承性  多态性    2.什么是封装 封装性就是隐藏实现细节，,仅对外公开接口。   3.为什么要进行封装? 以下代码存在的问题?  123456789101112131415161718// 1成员变量是public的,也就是公开的,我们不能控制外界如何赋值, 外界有可能赋值一些脏数据@interface Gun : NSObjec">
+  <meta name="description" content="OC语言之封装，继承，多态封装1.面向对象三大特性 封装性  继承性  多态性">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OC之封装 继承 多态">
 <meta property="og:url" content="http://program-ape.space/2018/03/18/OC之封装-继承-多态/index.html">
 <meta property="og:site_name" content="Program-Ape">
-<meta property="og:description" content="OC语言之封装，继承，多态封装1.面向对象三大特性 封装性  继承性  多态性    2.什么是封装 封装性就是隐藏实现细节，,仅对外公开接口。   3.为什么要进行封装? 以下代码存在的问题?  123456789101112131415161718// 1成员变量是public的,也就是公开的,我们不能控制外界如何赋值, 外界有可能赋值一些脏数据@interface Gun : NSObjec">
+<meta property="og:description" content="OC语言之封装，继承，多态封装1.面向对象三大特性 封装性  继承性  多态性">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://program-ape.space/Users/zhangwei/Desktop/封装继承多态/继承1.png">
 <meta property="og:image" content="http://program-ape.space/Users/zhangwei/Desktop/封装继承多态/继承2.png">
@@ -22,10 +22,10 @@
 <meta property="og:image" content="http://program-ape.space/Users/zhangwei/Desktop/封装继承多态/继承5.png">
 <meta property="og:image" content="http://7xj0kx.com1.z0.glb.clouddn.com/dyf.png">
 <meta property="og:image" content="http://7xj0kx.com1.z0.glb.clouddn.com/slblxsf.png">
-<meta property="og:updated_time" content="2018-03-18T08:40:39.120Z">
+<meta property="og:updated_time" content="2018-03-18T09:01:38.566Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OC之封装 继承 多态">
-<meta name="twitter:description" content="OC语言之封装，继承，多态封装1.面向对象三大特性 封装性  继承性  多态性    2.什么是封装 封装性就是隐藏实现细节，,仅对外公开接口。   3.为什么要进行封装? 以下代码存在的问题?  123456789101112131415161718// 1成员变量是public的,也就是公开的,我们不能控制外界如何赋值, 外界有可能赋值一些脏数据@interface Gun : NSObjec">
+<meta name="twitter:description" content="OC语言之封装，继承，多态封装1.面向对象三大特性 封装性  继承性  多态性">
 <meta name="twitter:image" content="http://program-ape.space/Users/zhangwei/Desktop/封装继承多态/继承1.png">
   
     <link rel="alternative" href="/atom.xml" title="Program-Ape" type="application/atom+xml">
@@ -191,6 +191,7 @@
 </li>
 </ul>
 <hr>
+<a id="more"></a>
 <h2 id="2-什么是封装"><a href="#2-什么是封装" class="headerlink" title="2.什么是封装"></a>2.什么是封装</h2><ul>
 <li>封装性就是隐藏实现细节，,仅对外公开接口。</li>
 </ul>
@@ -751,6 +752,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#OC语言之封装，继承，多态"><span class="toc-number">1.</span> <span class="toc-text">OC语言之封装，继承，多态</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#封装"><span class="toc-number">2.</span> <span class="toc-text">封装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-面向对象三大特性"><span class="toc-number">2.1.</span> <span class="toc-text">1.面向对象三大特性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-什么是封装"><span class="toc-number">2.2.</span> <span class="toc-text">2.什么是封装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-为什么要进行封装"><span class="toc-number">2.3.</span> <span class="toc-text">3.为什么要进行封装?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-封装的好处"><span class="toc-number">2.4.</span> <span class="toc-text">4.封装的好处</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#继承"><span class="toc-number">3.</span> <span class="toc-text">继承</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-继承基本概念"><span class="toc-number">3.1.</span> <span class="toc-text">1.继承基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-OC中的继承关系"><span class="toc-number">3.2.</span> <span class="toc-text">2.OC中的继承关系</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-OC中如何实现继承"><span class="toc-number">3.3.</span> <span class="toc-text">3.OC中如何实现继承</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#继承相关特性"><span class="toc-number">4.</span> <span class="toc-text">继承相关特性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-方法重写"><span class="toc-number">4.1.</span> <span class="toc-text">1.方法重写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-继承中方法调用的顺序"><span class="toc-number">4.2.</span> <span class="toc-text">2.继承中方法调用的顺序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-继承的注意事项"><span class="toc-number">4.3.</span> <span class="toc-text">3.继承的注意事项</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#多态基本概念"><span class="toc-number">5.</span> <span class="toc-text">多态基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-什么是多态"><span class="toc-number">5.1.</span> <span class="toc-text">1.什么是多态?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-多态的条件"><span class="toc-number">5.2.</span> <span class="toc-text">2.多态的条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-多态的优点"><span class="toc-number">5.3.</span> <span class="toc-text">3.多态的优点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#多态的实现"><span class="toc-number">6.</span> <span class="toc-text">多态的实现</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-如何实现多态"><span class="toc-number">6.1.</span> <span class="toc-text">1.如何实现多态</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-多态的原理"><span class="toc-number">6.2.</span> <span class="toc-text">2.多态的原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-多态的注意点"><span class="toc-number">6.3.</span> <span class="toc-text">3.多态的注意点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#点语法"><span class="toc-number">7.</span> <span class="toc-text">点语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-点语法基本使用"><span class="toc-number">7.1.</span> <span class="toc-text">1.点语法基本使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-点语法的本质"><span class="toc-number">7.2.</span> <span class="toc-text">2.点语法的本质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-点语法注意"><span class="toc-number">7.3.</span> <span class="toc-text">3.点语法注意</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#实例变量修饰符"><span class="toc-number">8.</span> <span class="toc-text">实例变量修饰符</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-实例变量的作用域"><span class="toc-number">8.1.</span> <span class="toc-text">1.实例变量的作用域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-变量修饰符在子类中的访问"><span class="toc-number">8.2.</span> <span class="toc-text">2.变量修饰符在子类中的访问</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-实例变量作用域使用注意事项"><span class="toc-number">8.3.</span> <span class="toc-text">3.实例变量作用域使用注意事项</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#description方法"><span class="toc-number">9.</span> <span class="toc-text">description方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-description基本概念"><span class="toc-number">9.1.</span> <span class="toc-text">1.description基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-description重写的方法"><span class="toc-number">9.2.</span> <span class="toc-text">2.description重写的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-description陷阱"><span class="toc-number">9.3.</span> <span class="toc-text">3.description陷阱</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#getter-setter方法"><span class="toc-number">10.</span> <span class="toc-text">getter/setter方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-setter方法"><span class="toc-number">10.1.</span> <span class="toc-text">1.setter方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-getter方法"><span class="toc-number">10.2.</span> <span class="toc-text">2.getter方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-getter-setter方法注意"><span class="toc-number">10.3.</span> <span class="toc-text">3.getter/setter方法注意</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-练习"><span class="toc-number">10.4.</span> <span class="toc-text">4.练习</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Self关键字"><span class="toc-number">11.</span> <span class="toc-text">Self关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-类方法中的self"><span class="toc-number">11.1.</span> <span class="toc-text">1.类方法中的self</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-对象方法中的self"><span class="toc-number">11.2.</span> <span class="toc-text">2.对象方法中的self</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-全局变量成员变量局部变量"><span class="toc-number">11.3.</span> <span class="toc-text">3.全局变量成员变量局部变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-self总结"><span class="toc-number">11.4.</span> <span class="toc-text">4.self总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-self使用注意"><span class="toc-number">11.5.</span> <span class="toc-text">5.self使用注意</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Super关键字"><span class="toc-number">12.</span> <span class="toc-text">Super关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-super基本概念"><span class="toc-number">12.1.</span> <span class="toc-text">1.super基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-super的作用"><span class="toc-number">12.2.</span> <span class="toc-text">2.super的作用</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
