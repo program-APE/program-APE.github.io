@@ -6,15 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://program-ape.space">
-  <title>Archives: 2018 | Program-Ape</title>
+  <title>OC之封装 继承 多态 | Program-Ape</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Program-Ape">
-<meta property="og:url" content="http://program-ape.space/archives/2018/index.html">
+  <meta name="description" content="OC语言之封装，继承，多态封装##1.面向对象三大特性  封装性  继承性  多态性    ##2.什么是封装  封装性就是隐藏实现细节，,仅对外公开接口。   ##3.为什么要进行封装?  以下代码存在的问题?  123456789101112131415161718// 1成员变量是public的,也就是公开的,我们不能控制外界如何赋值, 外界有可能赋值一些脏数据@interface Gun">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OC之封装 继承 多态">
+<meta property="og:url" content="http://program-ape.space/2018/03/18/OC之封装-继承-多态/index.html">
 <meta property="og:site_name" content="Program-Ape">
+<meta property="og:description" content="OC语言之封装，继承，多态封装##1.面向对象三大特性  封装性  继承性  多态性    ##2.什么是封装  封装性就是隐藏实现细节，,仅对外公开接口。   ##3.为什么要进行封装?  以下代码存在的问题?  123456789101112131415161718// 1成员变量是public的,也就是公开的,我们不能控制外界如何赋值, 外界有可能赋值一些脏数据@interface Gun">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://program-ape.space/Users/zhangwei/Desktop/封装继承多态/继承1.png">
+<meta property="og:image" content="http://program-ape.space/Users/zhangwei/Desktop/封装继承多态/继承2.png">
+<meta property="og:image" content="http://program-ape.space/Users/zhangwei/Desktop/封装继承多态/继承3.png">
+<meta property="og:image" content="http://program-ape.space/Users/zhangwei/Desktop/封装继承多态/继承4.png">
+<meta property="og:image" content="http://program-ape.space/Users/zhangwei/Desktop/封装继承多态/继承5.png">
+<meta property="og:image" content="http://7xj0kx.com1.z0.glb.clouddn.com/dyf.png">
+<meta property="og:updated_time" content="2018-03-18T08:35:41.343Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Program-Ape">
+<meta name="twitter:title" content="OC之封装 继承 多态">
+<meta name="twitter:description" content="OC语言之封装，继承，多态封装##1.面向对象三大特性  封装性  继承性  多态性    ##2.什么是封装  封装性就是隐藏实现细节，,仅对外公开接口。   ##3.为什么要进行封装?  以下代码存在的问题?  123456789101112131415161718// 1成员变量是public的,也就是公开的,我们不能控制外界如何赋值, 外界有可能赋值一些脏数据@interface Gun">
+<meta name="twitter:image" content="http://program-ape.space/Users/zhangwei/Desktop/封装继承多态/继承1.png">
   
     <link rel="alternative" href="/atom.xml" title="Program-Ape" type="application/atom+xml">
   
@@ -150,49 +161,422 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-OC之封装-继承-多态" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/18/OC之封装-继承-多态/" class="archive-article-date">
-  	<time datetime="2018-03-18T08:35:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-18</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/18/OC之封装-继承-多态/">OC之封装 继承 多态</a>
+    <h1 class="article-title" itemprop="name">
+      OC之封装 继承 多态
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2018/03/18/OC之封装-继承-多态/" class="archive-article-date">
+  	<time datetime="2018-03-18T08:35:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="OC语言之封装，继承，多态"><a href="#OC语言之封装，继承，多态" class="headerlink" title="OC语言之封装，继承，多态"></a>OC语言之封装，继承，多态</h1><h1 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h1><p>##1.面向对象三大特性</p>
+<ul>
+<li><p>封装性</p>
+</li>
+<li><p>继承性</p>
+</li>
+<li><p>多态性</p>
+</li>
+</ul>
+<hr>
+<p>##2.什么是封装</p>
+<ul>
+<li>封装性就是隐藏实现细节，,仅对外公开接口。</li>
+</ul>
+<hr>
+<p>##3.为什么要进行封装?</p>
+<ul>
+<li>以下代码存在的问题?</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">// 1成员变量是public的,也就是公开的,我们不能控制外界如何赋值, 外界有可能赋值一些脏数据</span><br><span class="line"></span><br><span class="line">@interface Gun : NSObject</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">@public// 公开成员变量</span><br><span class="line"></span><br><span class="line">int _bulletCount;// 子弹数量</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@end</span><br><span class="line"></span><br><span class="line">// 可以利用封装来解决这个问题</span><br><span class="line"></span><br><span class="line">// 封装:是指隐藏对象的属性和实现的细节,仅对外提供公共的访问方法</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>类是数据与功能的封装，数据就是成员变量，功能就类方法或对象方法</p>
+</li>
+<li><p>对数据的封装，也就是对成员变量的封装</p>
+</li>
+<li><p>不封装的缺点：当一个类把自己的成员变量暴露给外部的时候,那么该类就失去对该成员变量的管理权，别人可以任意的修改你成员变量。</p>
+</li>
+<li><p>封装就是将数据隐藏起来,只能用此类的方法才可以读取或者设置数据,不可被外部任意修改是面向对象设计本质。降低了数据被误用的可能性! ，提高代码的灵活性</p>
+</li>
+</ul>
+<hr>
+<p>##4.封装的好处</p>
+<ul>
+<li>好处</li>
+</ul>
+<ul>
+<li><p>将变化隔离</p>
+</li>
+<li><p>提高安全性</p>
+</li>
+</ul>
+<ul>
+<li>原则</li>
+</ul>
+<ul>
+<li>将不需要对外提供的内容都隐藏起来,把属性都隐藏,提供公共的方法对其访问</li>
+</ul>
+<hr>
+<p><a href="https://www.jianshu.com/p/67ade5717f80" target="_blank" rel="noopener">类与类之间的几种关系</a></p>
+<h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>##1.继承基本概念</p>
+<ul>
+<li>现实生活中的继承</li>
+</ul>
+<p><img src="/Users/zhangwei/Desktop/封装继承多态/继承1.png" alt=""></p>
+<p><img src="/Users/zhangwei/Desktop/封装继承多态/继承2.png" alt=""></p>
+<ul>
+<li><p>交通工具类是一个基类(也称做父类),通常情况下所有交通工具所共同具备的特性，如速度与额定 载人的数量</p>
+</li>
+<li><p>按照生活常规,我们来继续给交通工具来细分类的时候,我们会分别想到有汽车类和飞机类等 等,汽车类和飞机类同样具备速度和额定载人数量这样的特性,而这些特性是所有交通工具所共有的,那么就可以让汽车或飞机类继承交通工具类，这样当建立汽车类和飞机类的时候我们无需再定义交通工具类（基类）中已经有的成员和方法,而只需要�述汽车类和飞机类所特有的特性即可。</p>
+</li>
+<li><p>飞机类和汽车类的特性是由在交通工具类原有特性基础上增加而来的,那么飞机类和汽车类就是交通工具类的派生类(也称做子类)。以此类推,层层递增, 这种子类获得父类特性的概念就是继承</p>
+</li>
+<li><p>继承的重要性</p>
+</li>
+</ul>
+<p><img src="/Users/zhangwei/Desktop/封装继承多态/继承3.png" alt=""></p>
+<hr>
+<p>##2.OC中的继承关系</p>
+<p><img src="/Users/zhangwei/Desktop/封装继承多态/继承4.png" alt=""></p>
+<ul>
+<li><p>B类继承A类，那么B类将拥有A类的所有属性和方法，此时我们说A类是B类的父类，B类是A类的子类</p>
+</li>
+<li><p>C类继承B类，那么C类将拥有B类中的所有属性和方法，包括B类从A类中继承过来的属性和方法，此时我们说B类是C类的父类，C类是B类的子类</p>
+</li>
+<li><p>注意:</p>
+</li>
+</ul>
+<ul>
+<li><p>基类的私有属性能被继承,不能在子类中访问。</p>
+</li>
+<li><p>OC中的继承是单继承:也就是说一个类只能一个父类,不能继承多个父类</p>
+</li>
+<li><p>子类与父类的关系也称为isA（是一个）关系，我们说 子类isA父类，也就是子类是一个父类，比如狗类继承动物类，那么我们说狗isA动物，也就是狗是一个动物。在如汽车继承交通工具，那么们说汽车isA交工工具，也就是汽车是一个交通工具</p>
+</li>
+<li><p>继承的合理性:引用《大话西游》里的一句话来描述继承的。“人是人他妈生的,妖是妖他妈生的!”</p>
+</li>
+</ul>
+<hr>
+<p>##3.OC中如何实现继承</p>
+<ul>
+<li>在声明子类的时候，在子类名称后面通过：父类名称方式来实现继承</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">@interface 子类名称 : 父类名称</span><br><span class="line"></span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="继承相关特性"><a href="#继承相关特性" class="headerlink" title="继承相关特性"></a>继承相关特性</h1><p>##1.方法重写</p>
+<ul>
+<li><p>在子类中实现与父类中同名的方法，称之为方法重写；</p>
+</li>
+<li><p>重写以后当给子类发送这个消息的时候，执行的是在子类中重写的那个方法，而不是父类中的方法。</p>
+</li>
+<li><p>如果想在子类中调用被子类重写的父类的方法，可以通过super关键字</p>
+</li>
+<li><p>使用场景：当从父类继承的某个方法不适合子类,可以在子类中重写父类的这个方法。</p>
+</li>
+</ul>
+<p>##2.继承中方法调用的顺序</p>
+<ul>
+<li><p>1、在自己类中找</p>
+</li>
+<li><p>2、如果没有,去父类中找</p>
+</li>
+<li><p>3、如果父类中没有,就去父类的父类中</p>
+</li>
+<li><p>4、如果父类的父类也没有,就还往上找,直到找到基类(NSObject)</p>
+</li>
+<li><p>5、如果NSObject都没有就报错了</p>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li>如果找到了就执行这个方法，就不再往后查找了</li>
+</ul>
+</blockquote>
+<hr>
+<p>##3.继承的注意事项</p>
+<ul>
+<li><p>子类不能定义和父类同名的成员变量，私有成员变量也不可以；因为子类继承父类，子类将会拥有父类的所有成员变量，若在子类中定义父类同名成员变量 属于重复定义。</p>
+</li>
+<li><p>OC类支持单一继承,不支持多继承；也就是说一个类只能有一个直接父类</p>
+</li>
+<li><p>OC类支持多层继承 ,如下图所示</p>
+</li>
+</ul>
+<p><img src="/Users/zhangwei/Desktop/封装继承多态/继承5.png" alt=""></p>
+<h1 id="多态基本概念"><a href="#多态基本概念" class="headerlink" title="多态基本概念"></a>多态基本概念</h1><p>##1.什么是多态?</p>
+<ul>
+<li>什么是多态:多态就是某一类事物的多种形态</li>
+</ul>
+<ul>
+<li><p>猫: 猫–&gt;动物</p>
+</li>
+<li><p>狗: 狗–&gt;动物</p>
+</li>
+<li><p>男人 : 男人 –&gt;人 –&gt;高级动物</p>
+</li>
+<li><p>女人 : 女人 –&gt;人 –&gt;高级动物</p>
+</li>
+</ul>
+<ul>
+<li>程序中的多态:父类指针指向子类对象</li>
+</ul>
+<hr>
+<p>##2.多态的条件</p>
+<ul>
+<li><p>有继承关系</p>
+</li>
+<li><p>子类重写父类方法</p>
+</li>
+<li><p>父类指针指向子类对象</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">狗 *g = [狗 new];</span><br><span class="line"></span><br><span class="line">动物 *a = [狗 new];</span><br><span class="line"></span><br><span class="line">猫 *c = [猫 new];</span><br><span class="line"></span><br><span class="line">动物 *a = [猫 new];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>表现：当父类指针指向不同的对象的时候，通过父类指针调用被重写的方法的时候，会执行该指针所指向的那个对象的方法</li>
+</ul>
+<hr>
+<p>##3.多态的优点</p>
+<ul>
+<li><p>多态的主要好处就是<code>简化了编程接口。</code>它允许<code>在类和类之间重用一些习惯性的命名,</code>而不用 为每一个新加的函数命名一个新名字。这样,编程接口就是一些抽象的行为的集合,从而和实现接口的类的区分开来。</p>
+</li>
+<li><p>多态也使得代码可以分散在不同的对象中而不用<code>试图在一个函数中考虑到所有可能的对象。</code> 这样使得您的代码扩展性和复用性更好一些。当一个新的情景出现时,您无须对现有的代码进行 改动,而只需要增加一个新的类和新的同名方法。</p>
+</li>
+</ul>
+<hr>
+<h1 id="多态的实现"><a href="#多态的实现" class="headerlink" title="多态的实现"></a>多态的实现</h1><p>##1.如何实现多态</p>
+<ul>
+<li>Animal是父类,子类有Cat 和 Dog,子类分别重写了父类中的eat方法;实例化对象的时候可以用下面的方法:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Animal *animal = nil;</span><br><span class="line"></span><br><span class="line">//实例化猫的对象</span><br><span class="line"></span><br><span class="line">animal = [Cat new];</span><br><span class="line"></span><br><span class="line">[animal eat];</span><br><span class="line"></span><br><span class="line">//实例化狗的对象</span><br><span class="line"></span><br><span class="line">animal = [Dog new];</span><br><span class="line"></span><br><span class="line">[animal eat];</span><br></pre></td></tr></table></figure>
+<p>##2.多态的原理</p>
+<ul>
+<li>动态绑定:</li>
+</ul>
+<ul>
+<li><p>动态类型能使程序直到执行时才确定对象的真实类型</p>
+</li>
+<li><p>动态类型绑定能使程序直到执行时才确定要对那个对象调用的方法</p>
+</li>
+</ul>
+<ul>
+<li><p>OC不同于传统程序设计语言,它可以在运行时加入新的数据类型和新的程序模块:动态类型识别,动态绑定,动态加载</p>
+</li>
+<li><p>id类型:通用对象指针类型,弱类型,编译时不进行具体类型检查</p>
+</li>
+</ul>
+<hr>
+<p>##3.多态的注意点</p>
+<ul>
+<li>1)如果存在多态,父类是可以访问子类特有的方法</li>
+</ul>
+<p>假设 子类 Dog 有一个特有的方法bark</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[dog bark];</span><br><span class="line"></span><br><span class="line">Animal *an2 = [Dog new];</span><br><span class="line"></span><br><span class="line">[(Dog*)an2 bark]; //把父类的指针,强制类型转换</span><br></pre></td></tr></table></figure>
+<ul>
+<li>2)如果不存在多态,父类是不可以访问子类特有的方法的</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Animal *an3 = [Animal new];</span><br><span class="line"></span><br><span class="line">[(Dog*)an3 bark]; //错误的,不能强制转换</span><br></pre></td></tr></table></figure>
+<h1 id="点语法"><a href="#点语法" class="headerlink" title="点语法"></a>点语法</h1><p>##1.点语法基本使用</p>
+<hr>
+<p>##2.点语法的本质</p>
+<ul>
+<li><p>其实点语法的本质还是方法调用</p>
+</li>
+<li><p>当使用点语法时，编译器会自动展开成相应的方法</p>
+</li>
+</ul>
+<p><img src="http://7xj0kx.com1.z0.glb.clouddn.com/dyf.png" alt=""></p>
+<ul>
+<li>当点语法使用在 “=“赋值符号左侧的时候，点语法会被展开为setter方法的调用，其他情况（等号右侧、直接使用）为点语法展开为getter方法的调用</li>
+</ul>
+<hr>
+<p>##3.点语法注意</p>
+<ul>
+<li><p>点语法的本质是方法的调用,而不是访问成员变量,当使用点语法时,编译器会自动展开成相 应的方法调用。</p>
+</li>
+<li><p>切记点语法的本质是转换成相应的对setter和getter方法调用,如果没有set和get方法,则不能使用点语法。</p>
+</li>
+<li><p>不要在getter 与  setter方法中使用本属性的点语法</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- (void) setAge:(int)age &#123;</span><br><span class="line"></span><br><span class="line">// 下面的代码会引发死循环</span><br><span class="line"></span><br><span class="line">self.age = age;</span><br><span class="line"></span><br><span class="line">//编译器展开后 [self setAge:age]</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (int) age &#123;</span><br><span class="line"></span><br><span class="line">// 下面的代码会引发死循环</span><br><span class="line"></span><br><span class="line">return self.age;</span><br><span class="line"></span><br><span class="line">// 编译器展开后 [self   age]</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">--</span><br><span class="line"></span><br><span class="line"># 实例变量修饰符</span><br><span class="line"></span><br><span class="line">##1.实例变量的作用域</span><br><span class="line"></span><br><span class="line">![](http://7xj0kx.com1.z0.glb.clouddn.com/slblxsf.png)</span><br><span class="line"></span><br><span class="line">- 1)@public (公开的)在有对象的前�下,任何地方都可以直接访问。</span><br><span class="line"></span><br><span class="line">- 2)@protected (受保护的)只能在当前类和子类的对象方法中访问</span><br><span class="line"></span><br><span class="line">- 3)@private (私有的)只能在当前类的对象方法中才能直接访问</span><br><span class="line"></span><br><span class="line">- 4)@package (框架级别的)作用域介于私有和公开之间,只要处于同一个框架中相当于@public,在框架外部相当于@private</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">##2.变量修饰符在子类中的访问</span><br><span class="line"></span><br><span class="line">- 1)@private私有成员是能被继承,也不能被外部方法访问。</span><br><span class="line"></span><br><span class="line">- 2)@public 公有成员能被继承,也能被外部方法访问。</span><br><span class="line"></span><br><span class="line">- 3)@protected 保护成员能够被继承,不能够被外部方法访问。</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">##3.实例变量作用域使用注意事项</span><br><span class="line"></span><br><span class="line">- (1)在@interface @end之间声明的成员变量如果不做特别的说明,那么其默认是protected 的。</span><br><span class="line"></span><br><span class="line">- (2)一个类继承了另一个类,那么就拥有了父类的所有成员变量和方法,注意所有的成员变量它都拥有,只是有的它不能直接访问。例如@private的</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># description方法</span><br><span class="line"></span><br><span class="line">##1.description基本概念</span><br><span class="line"></span><br><span class="line">- NSLog(@&quot;%@&quot;, objectA);这会自动调用objectA的description方法来输出ObjectA的描述信息.</span><br><span class="line"></span><br><span class="line">- description方法默认返回对象的描述信息(默认实现是返回类名和对象的内存地址)</span><br><span class="line"></span><br><span class="line">- description方法是基类NSObject 所带的方法,因为其默认实现是返回类名和对象的内存地址, 这样的话,使用NSLog输出OC对象,意义就不是很大,因为我们并不关心对象的内存地址,比较关心的是对象内部的一些成变量的值。因此,会经常重写description方法,覆盖description方法 的默认实现</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">##2.description重写的方法</span><br><span class="line"></span><br><span class="line">- 对象方法</span><br></pre></td></tr></table></figure>
+<p>/*<em>对象方法：当使用NSLog输出该类的实例对象的时候调用</em>/</p>
+<p>-(NSString *) description</p>
+<p>{</p>
+<p>return [NSString stringWithFormat:@”狗腿数:%d,狗眼数%d\n”,_legNum,_eyeNum];</p>
+<p>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 类方法</span><br></pre></td></tr></table></figure>
+<p>/*<em>类方法：当使用NSLog输出该类的类对象的时候调用</em>/</p>
+<p>+(NSString *) description</p>
+<p>{</p>
+<p>return @”+开头的description方法”;</p>
+<p>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">##3.description陷阱</span><br><span class="line"></span><br><span class="line">- 千万不要在description方法中同时使用%@和self,下面的写法是错误的</span><br></pre></td></tr></table></figure>
+<ul>
+<li>(NSString *)description {</li>
+</ul>
+<p>return [NSString stringWithFormat:@”%@”, self];</p>
+<p>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 同时使用了%@和self,代表要调用self的description方法,因此最终会导致程序陷入死循环,循 环调用description方法</span><br><span class="line"></span><br><span class="line">- 当[NSString stringWithFormat:@“%@”, self]; 使用它时，循坏调用，导致系统会发生运行时错误。</span><br><span class="line"></span><br><span class="line">- 当该方法使用NSLog(“%@”,self)  时候, 系统做了相关的优化，循坏调用3次后就会自动退出</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># getter/setter方法</span><br><span class="line"></span><br><span class="line">##1.setter方法</span><br><span class="line"></span><br><span class="line">- 作用：用来设置成员变量，可以在方法里面过滤掉一些不合理的值</span><br><span class="line"></span><br><span class="line">- 命名规范：</span><br><span class="line"></span><br><span class="line">+ 必须是对象方法</span><br><span class="line"></span><br><span class="line">+ 返回值类型为void</span><br><span class="line"></span><br><span class="line">+ 方法名必须以set开头，而且后面跟上成员变量名去掉”_” 首字母必须大写</span><br><span class="line"></span><br><span class="line">+ 必须提供一个参数，参数类型必须与所对应的成员变量的类型一致</span><br><span class="line"></span><br><span class="line">+ 形参名称和成员变量去掉下划线相同</span><br><span class="line"></span><br><span class="line">- 举例：</span><br></pre></td></tr></table></figure>
+<p>如：如果成员变量为int _age 那么与之对应seter方法为</p>
+<p>-(void) setAge: (int) age;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- setter方法的好处</span><br><span class="line"></span><br><span class="line">+ 不让数据暴露在外,保证了数据的安全性</span><br><span class="line"></span><br><span class="line">+ 对设置的数据进行过滤</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">##2.getter方法</span><br><span class="line"></span><br><span class="line">- 作用：为调用者返回对象内部的成员变量的值</span><br><span class="line"></span><br><span class="line">- 命名规范：</span><br><span class="line"></span><br><span class="line">+ 必须是对象方法</span><br><span class="line"></span><br><span class="line">+ 必须有返回值,返回值的类型和成员变量的类型一致</span><br><span class="line"></span><br><span class="line">+ 方法名必须是成员变量去掉下划线</span><br><span class="line"></span><br><span class="line">+ 一定是没有参数的</span><br><span class="line"></span><br><span class="line">- 举例</span><br></pre></td></tr></table></figure>
+<p>如：如果成员变量为int _age 那么与之对应geter方法为</p>
+<ul>
+<li>(int) age;</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- getter方法的优点：</span><br><span class="line"></span><br><span class="line">+ 可以让我们在使用getter方法获取数据之前,对数据进行加工；</span><br><span class="line"></span><br><span class="line">+ 比如双十一活动，我们希望对全线商品的价格在原来的价格基础上打五折，那么我们只要去改成品类的价格的getter方法就可以了，让他返回的值为价格 * 0.5</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">##3.getter/setter方法注意</span><br><span class="line"></span><br><span class="line">- 在实际的开发中,不一定set和get方法都会提�供,如果内部的成员变量,比如学生的学号或计算出来的数据。这样的数据只允许外界读取，但是不允许修改的情况,则通常只提�供get方法而不�提供set方法</span><br><span class="line"></span><br><span class="line">。</span><br><span class="line"></span><br><span class="line">- 成员变量名的命名以下划线开头,get方法名不需要带下划线</span><br><span class="line"></span><br><span class="line">- 成员变量名使用下划线开头有两个好处</span><br><span class="line"></span><br><span class="line">+ 与get方法的方法名区分开来</span><br><span class="line"></span><br><span class="line">+ 可以和一些其他的局部变量区分开来,下划线开头的变量,通常都是类的成员变量。当我看到以下划线开头变量，那么他一定是成员变量</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">##4.练习</span><br><span class="line"></span><br><span class="line">- 设计一个K线类, 有三个属性, 最高价格, 最低价格, 平均价格. 要求可以设置和获取这三个属性</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Self关键字</span><br><span class="line"></span><br><span class="line">- OC提�供了两个保留字self和super</span><br><span class="line"></span><br><span class="line">+ OC语言中的self,就相当于C++、Java中的this指针。</span><br><span class="line"></span><br><span class="line">- 要理解什么是self，什么是成员变量，什么是对象方法，什么是类方法</span><br><span class="line"></span><br><span class="line">- 成员变量:成员变量是一个实例对象的具体状态特征，并且这些状态特征是可以改变的，如张三的年龄，身高，体重等</span><br><span class="line"></span><br><span class="line">- 对象方法：一个实例对象的行为，比如张三具有吃的行为，张三做出这样行为的时候，有可能会影响，自身的某些状态特征，比如张三吃可能会增加张三体重和身高。</span><br><span class="line"></span><br><span class="line">- 类方法：类方法是某个类的行为，可以直接通过类名调用；如果在类方法中需要使用某些数据，必须通过参数传入；它不能访问成员变量。</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">##1.类方法中的self</span><br><span class="line"></span><br><span class="line">- 在整个程序运行过程中，`一个类有且仅有一个类对象`。</span><br><span class="line"></span><br><span class="line">- 通过`类名`调用方法就是给这个`类对象`发送消息。</span><br><span class="line"></span><br><span class="line">- 类方法的self就是这个类对象</span><br><span class="line"></span><br><span class="line">- 在类方法中可以通过self来调用其他的类方法</span><br><span class="line"></span><br><span class="line">- 不能在类方法中去调用对象方法或成员变量，因为对象方法与成员变量都是属于具体的实例对象的。</span><br><span class="line"></span><br><span class="line">// 缺一张配图</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">##2.对象方法中的self</span><br><span class="line"></span><br><span class="line">- 在整个程序运行过程中，`对象可以有0个或多个`</span><br><span class="line"></span><br><span class="line">- 通过`对象`调用方法就是给这个`对象`发送消息</span><br><span class="line"></span><br><span class="line">- 对象方法中self就是调用这个方法的当前对象。</span><br><span class="line"></span><br><span class="line">- 在对象方法中，可以通过self来调用本对象上的其他方法</span><br><span class="line"></span><br><span class="line">- 在对象方法中，可以通过self来访问成员变量</span><br><span class="line"></span><br><span class="line">// 缺一张配图</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">##3.全局变量成员变量局部变量</span><br><span class="line"></span><br><span class="line">- 全局变量：只要是有声明它的地方都能使用</span><br><span class="line"></span><br><span class="line">- 成员变量：只能在本类和其子类的对象方法中使用</span><br><span class="line"></span><br><span class="line">- 局部变量：只能在本函数或方法中使用</span><br><span class="line"></span><br><span class="line">- 从作用域的范围来看：全局变量 &gt; 成员变量 &gt; 局部变量</span><br><span class="line"></span><br><span class="line">- 当不同的作用域中出现了同名的变量，内部作用域的变量覆盖外部作用域变量，所以同名变量的覆盖顺序为：局部变量覆盖成员变量，成员变量覆盖全局变量</span><br><span class="line"></span><br><span class="line">- 如果在对象方法中出现与成员变量同名的局部变量，如果此时想使用该成员变量可以通过self-&gt;成员变量名的方式</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">##4.self总结</span><br><span class="line"></span><br><span class="line">- 谁调用self所在的方法，那么self就是谁</span><br><span class="line"></span><br><span class="line">- self在类方法中，就是这个类的类对象，全局只有一个，可通过self调用本类中的其他类方法，但是不能通过self来调用对象方法或访问成员变量</span><br><span class="line"></span><br><span class="line">- self在对象方法中，就是调用这个方法的那个对象， 可以通过self调用本类中其他的对象方法，访问成员变量，但不能通过self调用本类的类方法。</span><br><span class="line"></span><br><span class="line">- 通过self调用方法的格式：[self  方法名];</span><br><span class="line"></span><br><span class="line">- 通过self访问成员变量格式：self-&gt;成员变量名</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">##5.self使用注意</span><br><span class="line"></span><br><span class="line">- 同时有对象方法和类方法存在的时候,self不会调错</span><br><span class="line"></span><br><span class="line">- self只能在方法中使用;不要使用self来调用函数，也不可以在函数内部使用self；</span><br><span class="line"></span><br><span class="line">- 使用self调用本方法，导致死循环调用。</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># Super关键字</span><br><span class="line"></span><br><span class="line">##1.super基本概念</span><br><span class="line"></span><br><span class="line">- super是个编译器的指令符号,只是告诉编译器在执行的时候,去调谁的方法.</span><br><span class="line"></span><br><span class="line">&gt;+ self是一个隐私参数;</span><br></pre></td></tr></table></figure>
+<p>self refers to the object receiving a message in objective-C programming.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&gt;+ super 并不是隐藏的参数，它只是一个“编译器指示符”，它和 self 指向的是相同的消息接收者</span><br></pre></td></tr></table></figure>
+<p>super is a flag that tells the compiler to search for the method implementation in a very different place. It begins in the superclass of the class that defines the method where super appears.</p>
+<p><code>`</code></p>
+<p>##2.super的作用</p>
+<ul>
+<li><p>1.直接调用父类中的某个方法</p>
+</li>
+<li><p>2.super在对象方法中，那么就会调用父类的对象方法</p>
+</li>
+</ul>
+<p>super在类方法中，那么就会调用父类的类方法</p>
+<ul>
+<li>使用场合：</li>
+</ul>
+<ul>
+<li>子类重写父类的方法时想保留父类的一些行为</li>
+</ul>
+<p>引用:</p>
+<p><a href="http://blog.csdn.net/u012938194/article/details/50640402" target="_blank" rel="noopener">OC语言之封装,继承,多态</a></p>
+<p><a href="http://www.bubuko.com/infodetail-1233210.html" target="_blank" rel="noopener">OC基础(7)</a></p>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://program-ape.space/2018/03/18/OC之封装-继承-多态/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
+
   
 
-    
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -215,8 +599,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
